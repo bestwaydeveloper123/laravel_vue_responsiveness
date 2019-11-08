@@ -1,0 +1,532 @@
+//// Fonts
+@import url("https://fonts.googleapis.com/css?family=Nunito");
+//
+//// Variables
+//@import 'variables';
+
+// Bootstrap
+@import "~bootstrap/scss/bootstrap";
+
+@import "node_modules/@coreui/coreui/scss/coreui";
+
+@import "node_modules/@coreui/icons/scss/coreui-icons";
+@import "node_modules/flag-icon-css/css/flag-icon.min";
+@import "node_modules/font-awesome/css/font-awesome.min";
+@import "node_modules/simple-line-icons/css/simple-line-icons";
+
+.form-control-sm {
+  font-weight: 700;
+  color: black;
+}
+
+.width-100 {
+  width: 100%;
+}
+
+.width-1 {
+  width: 1%;
+}
+
+.text-red {
+  color: red;
+}
+
+.text-blue {
+  color: #0069d9;
+}
+
+.width-80 {
+  width: 82%;
+}
+
+.put-center {
+  text-align: center !important;
+}
+
+.put-right {
+  text-align: right !important;
+}
+
+.word-break {
+  word-break: break-word !important;
+}
+
+.border-none {
+  border: none !important;
+}
+
+.border-right-none {
+  border-right: none !important;
+}
+
+.border-left-none {
+  border-left: none !important;
+}
+
+.border-left-right-none {
+  border-left: none !important;
+  border-right: none !important;
+}
+
+.border-1 {
+  border: 1px solid #ddd !important;
+}
+
+.resize-none {
+  resize: none !important;
+}
+
+.display-flex {
+  display: flex !important;
+}
+
+.overflow-auto {
+  overflow: auto !important;
+}
+
+.font-weight-700 {
+  font-weight: 700 !important;
+}
+
+.selectbackground input[type="radio"]:checked + label {
+  background-color: #007bff;
+  background: #007bff;
+}
+.selectbackground input[type="radio"] {
+  display: none;
+}
+
+.selectbackground input[type="checkbox"]:checked + label {
+  background-color: #007bff;
+  background: #007bff;
+}
+.selectbackground input[type="checkbox"] {
+  display: none;
+}
+
+.table-responsive {
+  overflow-x: unset !important;
+}
+
+#myBtn {
+  display: none; /* Hidden by default */
+  position: fixed; /* Fixed/sticky position */
+  bottom: 35px; /* Place the button at the bottom of the page */
+  right: 30px; /* Place the button 30px from the right */
+  z-index: 99; /* Make sure it does not overlap */
+  border: none; /* Remove borders */
+  outline: none; /* Remove outline */
+  color: gray; /* Text color */
+  cursor: pointer; /* Add a mouse pointer on hover */
+  padding: 8px; /* Some padding */
+  border-radius: 10px; /* Rounded corners */
+  font-size: 14px; /* Increase font size */
+}
+
+#myBtn:hover {
+  background-color: #555; /* Add a dark-grey background on hover */
+}
+
+.table.inventory-fonts {
+  thead {
+    .head-title {
+      font-size: 18px;
+      font-weight: bolder;
+    }
+
+    .head-column {
+      font-size: 15px;
+    }
+  }
+
+  tbody {
+    .body-column {
+      font-size: 11px;
+      vertical-align: middle;
+    }
+  }
+}
+
+@media print {
+  .app-footer {
+    display: none;
+  }
+
+  .app-header {
+    display: none;
+  }
+
+  .sidebar {
+    display: none;
+  }
+
+  //.print-style {
+  //    font-size: .8rem;
+  //    line-height: 1.25;
+  //    letter-spacing: -1.5px;
+  //}
+}
+
+.maxprintsize {
+  max-width: 100px;
+}
+
+//file upload css
+.file-upload {
+  margin: auto;
+  display: table;
+  textarea {
+    margin: 10px;
+    resize: none;
+    border-radius: 4px;
+    // border: none;
+    width: 300px;
+  }
+
+  .file-upload-button {
+    border: none;
+    background: #2ea745;
+    color: white;
+    border-radius: 4px;
+    width: 300px;
+    margin: 10px;
+    padding: 10px;
+  }
+
+  .fileupload-input {
+    position: relative;
+    width: 300px;
+    margin: 10px;
+
+    input {
+      height: 200px;
+      opacity: 0;
+    }
+
+    div {
+      position: absolute;
+      width: 100%;
+      background: white;
+      height: 200px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 10px;
+      border: #2ea745 5px dashed;
+      color: #2ea745;
+      pointer-events: none;
+      cursor: pointer;
+    }
+  }
+}
+
+// image listing table
+
+.image-table {
+  width: 100%;
+  tr {
+    margin: 10px;
+    th:first-child {
+      border-top-left-radius: 0.25em;
+    }
+    th:last-child {
+      border-top-right-radius: 0.25em;
+    }
+  }
+  td,
+  td {
+    text-align: left;
+  }
+
+  th {
+    padding: 0.25rem 1.25rem;
+    i {
+      margin-right: 5px;
+    }
+  }
+  td {
+    padding: 10px;
+    img {
+      width: 200px;
+      height: auto;
+      border-radius: 15px;
+    }
+  }
+}
+.p-10 {
+  padding: 10px;
+}
+.m-10 {
+  margin: 10px;
+}
+.reason-text {
+  width: 100%;
+  resize: none;
+}
+
+.fixed_header {
+  width: 100%;
+  table-layout: fixed;
+  border-collapse: collapse;
+  tbody {
+    display: block;
+    width: 100%;
+    overflow: auto;
+    height: 100px;
+    tr {
+      td,
+      th {
+        display: inline-block;
+      }
+
+      td:first-child {
+        width: 200px;
+      }
+
+      td:nth-child(2) {
+        width: 200px;
+      }
+      td:last-child {
+        width: 200px;
+      }
+    }
+  }
+  thead tr {
+    td,
+    th {
+      display: inline-block;
+    }
+    display: block;
+    th:first-child {
+      width: 200px;
+    }
+    th:nth-child(2) {
+      width: 200px;
+    }
+    th:last-child {
+      width: 200px;
+    }
+  }
+}
+
+.barcode-text {
+  input {
+    width: 25%;
+    float: left;
+  }
+  img {
+    padding-left: 10px;
+  }
+}
+
+.cursor-pointer {
+  cursor: pointer !important;
+}
+
+.font-size-18 {
+  font-size: 18px !important;
+}
+
+//Docusign Start
+
+.doc-container {
+  margin: 50px 130px;
+  font-weight: 700;
+  background: #fff;
+}
+
+.container {
+  padding: 0px 10px;
+  margin-top: 30px;
+}
+
+.info-method {
+  padding: 0px 10px 10px;
+  font-size: 18px;
+}
+
+.info-method2 {
+  border: 1px solid #ddd;
+  border-top: none;
+  padding: 0px 10px;
+  min-height: 180px;
+}
+
+.signature-1 {
+  border: 1px solid #ddd;
+  margin: 0px 550px 0px 150px;
+  cursor: pointer;
+}
+
+.signature-2 {
+  border: 1px solid #ddd;
+  padding: 40px;
+  margin: 0px 550px 0px 150px;
+  cursor: pointer;
+  color: red;
+  font-weight: 700;
+  font-size: 22px;
+  text-align: center;
+}
+
+.note {
+  border: 1px solid #ddd;
+  border-top: none;
+  border-bottom: none;
+  padding: 10px;
+  font-size: 12px;
+}
+
+// RMA Form Page
+
+.rma-submit-btn {
+  padding: 20px !important;
+  position: absolute;
+  right: 150px;
+  top: 2400px;
+}
+
+.rma-button {
+  display: block;
+  position: fixed;
+  right: 10px;
+  padding: 8px;
+}
+
+.main-container {
+  margin: 50px 150px;
+  border: 5px solid #dbddcc;
+  background: #f2f2f0;
+}
+
+.sub-container {
+  margin: 20px;
+  margin-right: -34px;
+  border: 5px solid #dbddcc;
+  background: #f2f2f0;
+}
+
+.container-1 {
+  margin: 30px;
+  font-weight: 700;
+  background: #fff;
+}
+
+.container-2 {
+  border: 1px solid #ddd;
+  min-height: 1260px;
+}
+
+.disclaimer {
+  border: 1px solid #ddd;
+  width: 60%;
+  padding: 0px 20px 30px 20px;
+}
+
+.order-date {
+  border: 1px solid #ddd;
+  width: 40%;
+  text-align: right;
+  padding-bottom: 90px;
+  padding-right: 10px;
+}
+
+.return-address {
+  border: 1px solid #ddd;
+  width: 35%;
+  padding: 0px 20px 30px 20px;
+  color: red;
+}
+
+.blank-td {
+  border: 1px solid #ddd;
+  width: 25%;
+  padding: 0px 20px 30px 20px;
+}
+
+.to-address-1 {
+  border: 1px solid #ddd;
+  width: 10%;
+  text-align: right;
+  padding-bottom: 130px;
+  padding-right: 10px;
+}
+
+.to-address-2 {
+  border: 1px solid #ddd;
+  width: 30%;
+  text-align: right;
+  padding-bottom: 110px;
+  padding-right: 10px;
+}
+
+.rma-input {
+  font-weight: 500;
+  margin-top: 10px;
+}
+
+.bg-1 {
+  background: #dbddcc;
+}
+
+.bg-2 {
+  background: #d9d9d9;
+}
+
+.height-100 {
+  height: 100px;
+}
+
+.b-right-none {
+  border-right: none;
+}
+
+.policy-content {
+  padding: 10px;
+  font-weight: 500;
+}
+
+.policy-content span {
+  font-size: 12px;
+}
+
+.policy-content:first-child table {
+  margin-top: 40px;
+}
+
+.sign-img {
+  border-bottom: 1px solid #000;
+  cursor: pointer;
+  width: 75%;
+}
+
+.sign-here {
+  border: 1px solid #ddd;
+  padding: 10px;
+  cursor: pointer;
+  color: red;
+  font-weight: 700;
+  text-align: center;
+}
+
+.return-content {
+  padding: 30px 10px 0px;
+}
+
+.content-1 {
+  font-size: 22px;
+  text-decoration: underline;
+}
+
+.content-2 {
+  font-size: 22px;
+  color: red;
+}
+
+.save-docu-btn {
+  padding: 8px;
+  position: absolute;
+  right: 150px;
+  top: 1240px;
+  padding: 8px;
+}

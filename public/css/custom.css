@@ -1,0 +1,37 @@
+@media print {
+  .noPrint {display:none;}
+  .hide-on-screen {display:block !important;}
+  .table-responsive {
+    display: table;
+  }
+  .table{ 
+    width: 100% !important; 
+    padding: 0 5%;
+    color: black;
+  }
+  tr{
+    border-top: 2px solid gray;
+  }
+  body {  
+    font-weight: 700;
+  }
+  table, tr, td{ 
+    padding: 0;
+  }
+  ul li {
+    display: inline;
+    padding: 10px;
+  }
+  .checkbox-height{
+    height: calc(1.5125rem + 0px);
+    width: 10%;
+  }
+}
+
+.hide{
+  display: none;
+}
+
+.text-center {
+  text-align: center !important;
+}
